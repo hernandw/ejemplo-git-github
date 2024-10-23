@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
+app.get('/login', (req, res)=>{
+    res.send('Login de usuario')
+});
+
 app.listen(PORT, () => {
     console.log(`Server running on port http://localhost:${PORT}`);
 });
